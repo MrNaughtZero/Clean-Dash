@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/main.css" type="text/css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&display=swap" rel="stylesheet">
+
+    <title>Clean Dash</title>
+</head>
+<body>
+    <nav>
+        <div class="desktop-nav">
+            <div class="nav-branding">
+                <div class="circle-one"> </div>
+                <div class="circle-two"> </div>
+                <h2>Clean Dash</h2>
+                <div class="slider"></div>
+            </div>
+            <div class="nav-profile">
+                <div class="logged-in-avatar">
+                    <img src="/images/avatar1.jpg" id="logged-in-img" width="50" height="50">
+                </div>
+                <div class="logged-in-user-details">
+                    <h5>Neil McNaught</h5>
+                    <p>Administrator</p>
+                </div>
+            </div>
+            <div class="nav-notifications">
+                <div class="nav-chat-note">
+                    <svg height="30" width="30" class="svg-chat" class="w-6 h-6" fill="none" stroke="var(--blue)" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"></path></svg>
+
+                    <div class="nav-chat-box">
+                        <div class="new-chat-block">
+                            <img src="/images/avatar1.jpg" height="50" width="50">
+                            <div class="chat-block-text">
+                                <h5>John Mayers</h5>
+                                <p>ACCOUNT UPDATE</p>
+                            </div>
+                        </div>
+                        <div class="new-chat-block">
+                            <img src="/images/avatar2.jpg" height="50" width="50">
+                            <div class="chat-block-text">
+                                <h5>Aaron Junt</h5>
+                                <p>ACCOUNT UPDATE</p>
+                            </div>
+                        </div>
+                        <div class="new-chat-block">
+                            <img src="/images/avatar3.jpg" height="50" width="50">
+                            <div class="chat-block-text">
+                                <h5>Neil Classic</h5>
+                                <p>ACCOUNT UPDATE</p>
+                            </div>
+                        </div>
+                        <div class="new-chat-block">
+                            <img src="/images/avatar4.jpg" height="50" width="50">
+                            <div class="chat-block-text">
+                                <h5>Emma Mayers</h5>
+                                <p>ACCOUNT UPDATE</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                
+                <svg width="30" height="30" id="svg-cog" class="w-6 h-6" fill="none" stroke="var(--blue)" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                <div class="nav-lighting">
+                    <svg class="svg-bolt" height="30" width="30" class="w-6 h-6" fill="none" stroke="var(--blue)" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                </div>
+        
+            
+            
+            
+            </div>
+
+            <div class="nav-search">
+                <svg height="15" width="15" id="nav-search-svg" class="w-6 h-6" fill="none" stroke="rgba(0,0,0,0.4)" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                <input id="nav-search-input" type="text" placeholder="Start typing to search...">
+            </div>
+
+
+            <div class="nav-links">
+                <h4 class="nav-category-link">
+                    Category 1
+                </h4>
+                <ul>
+                    <li>
+                        <svg class="nav-list-svg" height="20" width="20" id="svg-home" class="w-6 h-6" fill="none" stroke="var(--blue)" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
+                        <span>Dashboard</span>
+                    </li>
+                    <li>
+                        <svg height="20" class="nav-list-svg" width="20" class="w-6 h-6" fill="none" stroke="var(--blue)" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"></path></svg>
+                        <span>Link Two</span>
+                    </li>
+                </ul>
+
+                <h4 class="nav-category-link">
+                    Lorem
+                </h4>
+                <ul>
+                    <li>
+                        <svg class="nav-list-svg" height="20" width="20" class="w-6 h-6" fill="none" stroke="var(--blue)" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"></path></svg>
+                        <span>Box</span>
+                    </li>
+                    <li>
+                        <svg height="20" width="20" class="nav-list-svg" class="w-6 h-6" fill="none" stroke="var(--blue)" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.172 7l-6.586 6.586a2 2 0 102.828 2.828l6.414-6.586a4 4 0 00-5.656-5.656l-6.415 6.585a6 6 0 108.486 8.486L20.5 13"></path></svg>
+                        <span>Clips</span>
+                    </li>
+
+                    <li>
+                        <svg class="nav-list-svg" height="20" width="20" class="w-6 h-6" fill="none" stroke="var(--blue)" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                        <span>Brief</span>
+                    </li>
+                </ul>
+
+                <h4 class="nav-category-link">
+                    Lorem
+                </h4>
+                <ul>
+                    <li>
+                        <svg class="nav-list-svg" height="20" width="20" class="w-6 h-6" fill="none" stroke="var(--blue)" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"></path></svg>
+                        <span>Archive</span>
+                    </li>
+                    <li>
+                        <svg class="nav-list-svg" height="20" width="20" class="w-6 h-6" fill="none" stroke="var(--blue)" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path></svg>
+                        <span>Verified</span>
+                    </li>
+
+                    <li>
+                        <svg class="nav-list-svg" height="20" width="20" class="w-6 h-6" fill="none" stroke="var(--blue)" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                        <span>Calendar</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="tablet-nav">
+            <div class="nav-branding">
+                <div class="nav-circles">
+                    <div class="circle-one"> </div>
+                    <div class="circle-two"> </div>
+                </div>
+            </div>
+            <div class="logged-in-avatar">
+                <img src="/images/avatar1.jpg" id="logged-in-img" width="50" height="50">
+            </div>
+            <div class="logged-in-user-links">
+                <div class="svg-logged-in">
+                    <svg class="nav-list-svg" height="30" width="30" id="svg-home" class="w-6 h-6" fill="none" stroke="white" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
+                </div>
+                <div class="svg-logged-in">
+                    <svg height="30" id="nav-2" class="nav-list-svg" width="30" class="w-6 h-6" fill="none" stroke="white" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"></path></svg>
+
+                </div>
+                <div class="svg-logged-in">
+                    <svg class="nav-list-svg" id="svg-tab-box" height="30" width="30" class="w-6 h-6" fill="none" stroke="white" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"></path></svg>
+                </div>
+                <div class="svg-logged-in">
+                    <svg height="30" width="30" class="nav-list-svg" class="w-6 h-6" fill="none" stroke="white" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.172 7l-6.586 6.586a2 2 0 102.828 2.828l6.414-6.586a4 4 0 00-5.656-5.656l-6.415 6.585a6 6 0 108.486 8.486L20.5 13"></path></svg>
+                </div>
+                <div class="svg-logged-in">
+                    <svg class="nav-list-svg" height="30" width="30" class="w-6 h-6" fill="none" stroke="white" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                </div>
+                <div class="svg-logged-in">
+                    <svg class="nav-list-svg" height="30" width="30" class="w-6 h-6" fill="none" stroke="white" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"></path></svg>
+                </div>
+                <div class="svg-logged-in">
+                    <svg class="nav-list-svg" height="30" width="30" class="w-6 h-6" fill="none" stroke="white" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path></svg>
+                </div>
+                <div class="svg-logged-in">
+                    <svg class="nav-list-svg" height="30" width="30" class="w-6 h-6" fill="none" stroke="white" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="top-bar">
+            <div class="search-top-bar">
+                <svg height="10" width="10" id="search-top-bar" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                <input type="text" placeholder="Start typing to search..">
+            </div>
+            <div class="top-bar-messages">
+                <svg class="top-bar-messages" height="30" width="30" class="svg-chat" class="w-6 h-6" fill="none" stroke="var(--blue)" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"></path></svg>
+            </div>
+            <svg id="top-bar-cog" width="30" height="30" id="svg-cog" class="w-6 h-6" fill="none" stroke="var(--blue)" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+            <img src="/images/avatar1.jpg" height="30" width="30">
+        </div>
+        <div class="breadcrumb">
+            <p>
+                HOME / PRODUCTS / All
+            </p>
+        </div>
+
+        <div class="dash-main-content">
+            <div class="column-left">
+                <div class="sub-heading">
+                    <div class="sub-heading-split">
+                        <h5>Sales Dashboard</h5>
+                        <select name="days">
+                            <option value="today">Today</option>
+                            <option value="week">Last Week</option>
+                            <option value="30">Last 30 Days</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="sale-stats">
+                    <div class="stat-block">
+                        <div class="stat-block-heading">
+                            <h5>PRODUCTS SOLD</h5>
+                        </div>
+                        <div class="stat-block-numbers">
+                            157 <span class="stat-block-up-down">12% <svg class="stats-up-svg" height="15" width="15" class="w-6 h-6" fill="none" stroke="#24b314" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7"></path></svg></span>
+                        </div>
+                    </div>
+
+                    <div class="stat-block">
+                        <div class="stat-block-heading">
+                            <h5>GROSS PROFIT</h5>
+                        </div>
+                        <div class="stat-block-numbers">
+                            £459 <span class="stat-block-down">12%<svg class="stats-down-svg" height="15" width="15" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></span>
+                        </div>
+                    </div>
+
+                    <div class="stat-block">
+                        <div class="stat-block-heading">
+                            <h5>New Customer</h5>
+                        </div>
+                        <div class="stat-block-numbers">
+                            82 <span class="stat-block-down">29%<svg class="stats-down-svg" height="15" width="15" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></span>
+                        </div>
+                    </div>
+
+                    <div class="stat-block">
+                        <div class="stat-block-heading">
+                            <h5>REFUNDS PROCESSED</h5>
+                        </div>
+                        <div class="stat-block-numbers">
+                            22 <span class="stat-block-up-down">12% <svg class="stats-up-svg" height="15" width="15" class="w-6 h-6" fill="none" stroke="#24b314" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7"></path></svg></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="order-information">
+                    <div class="order-info-left">
+                        <div class="heading-order-left">
+                            <h5>New Orders</h5>
+                        </div>
+                        <div class="new-orders-table">
+                            <table>
+                                <tr id="table-header">
+                                    <th>
+                                        CUSTOMER
+                                    </th>
+                                    <th>
+                                        PRODUCTS
+                                    </th>
+                                    <th>
+                                        STATUS
+                                    </th>
+                                    <th>
+                                        TOTAL
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        John Mayers
+                                    </td>
+                                    <td>
+                                        <div class="table-images">
+                                            <div class="table-image-one">
+                                                <img src="/images/portfolio1.jpg" height="24" width="24">
+                                            </div>
+                                            <div class="table-image-two">
+                                                <img src="/images/portfolio2.jpg" height="24" width="24">
+                                            </div>
+                                            <div class="table-image-three">
+                                                <img src="/images/portfolio3.jpg" height="24" width="24">
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="green-order-status">
+
+                                        </div>
+                                    </td>
+                                    <td>
+                                        £354
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        Aaron Junt
+                                    </td>
+                                    <td>
+                                        <div class="table-images">
+                                            <div class="table-image-one">
+                                                <img src="/images/portfolio4.jpg" height="24" width="24">
+                                            </div>
+                                            <div class="table-image-two">
+                                                <img src="/images/portfolio5.jpg" height="24" width="24">
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="green-order-status">
+
+                                        </div>
+                                    </td>
+                                    <td>
+                                        £83
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        Emma Jones
+                                    </td>
+                                    <td>
+                                        <div class="table-images">
+                                            <div class="table-image-one">
+                                                <img src="/images/portfolio6.jpg" height="24" width="24">
+                                            </div>
+                                            <div class="table-image-two">
+                                                <img src="/images/portfolio8.jpg" height="24" width="24">
+                                            </div>
+                                            <div class="table-image-three">
+                                                <img src="/images/portfolio7.jpg" height="24" width="24">
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="green-order-status">
+
+                                        </div>
+                                    </td>
+                                    <td>
+                                        £354
+                                </tr>
+                                
+                                <tr>
+                                    <td>
+                                        Emma Jones
+                                    </td>
+                                    <td>
+                                        <div class="table-images">
+                                            <div class="table-image-one">
+                                                <img src="/images/portfolio9.jpg" height="24" width="24">
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="green-order-status">
+
+                                        </div>
+                                    </td>
+                                    <td>
+                                        £354
+                                </tr>
+
+                                
+                            </table>
+                        </div>
+                    </div>
+                    <div class="order-info-right">
+                        <div class="heading-order-right">
+                            <h5>Inventory Stats</h5>
+                            <select name="days">
+                                <option value="today">Today</option>
+                                <option value="week">Last Week</option>
+                                <option value="30">Last 30 Days</option>
+                            </select>
+                        </div>
+                        
+                        <div class="inventory-stats">
+                            <div class="inventory-stat-wrapper">
+                                <div class="inventory-stats-name">
+                                    <label for="eyeglasses">Eyeglasses</label>
+                                    <p class="inventory-remaining">
+                                        25 items/ 10 remaining
+                                    </p>
+                                </div>
+                                <progress class="progress-bar" value="68" max="100"> 32% </progress>
+                            </div>
+
+                            <div class="inventory-stat-wrapper">
+                                <div class="inventory-stats-name">
+                                    <label for="outwear">Outwear</label>
+                                    <p class="inventory-remaining">
+                                        18 items/ 7 remaining
+                                    </p>
+                                </div>
+                                <progress class="progress-bar" value="54" max="100"> 32% </progress>
+                            </div>
+
+                            <div class="inventory-stat-wrapper">
+                                <div class="inventory-stats-name">
+                                    <label for="Shoes">Shoes</label>
+                                    <p class="inventory-remaining">
+                                        15 items/ 12 remaining
+                                    </p>
+                                </div>
+                                <progress class="progress-bar" value="32" max="100"> 32% </progress>
+                            </div>
+
+                            <div class="inventory-stat-wrapper">
+                                <div class="inventory-stats-name">
+                                    <label for="eyeglasses">Eyeglasses</label>
+                                    <p class="inventory-remaining">
+                                        12 items/ 4 remaining
+                                    </p>
+                                </div>
+                                <progress class="progress-bar" value="18" max="100"> 32% </progress>
+                            </div>
+
+                            
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column-right">
+                <div class="right-block right-heading">
+                    <h3>QUICK LINKS</h3>
+                </div>
+                <div class="quick-links-btns">
+                    <button type="button" class="right-btn">
+                        <svg id="btn-box" height="15" width="15" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"></path></svg>
+                        <span>Create New Product</span>
+                    </button>
+
+                    <button type="button" class="right-btn">
+                        <svg id="comment-btn" height="15" width="15" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"></path></svg>
+                        <span>Customer Comments</span>
+                    </button>
+
+                    <button type="button" class="right-btn">
+                        <svg id="store-btn" height="15" width="15" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                        <span>Store Settings</span>
+                    </button>
+                </div>
+                <div class="right-block right-heading">
+                    <h3>Support Agents</h3>
+                </div>
+                <div class="support-agents">
+                    <div class="s-agent-wrapper">
+                        <div class="agent-block">
+                            <img src="/images/avatar1.jpg" width="60px" height="60px">
+                            <h6>JOHN MAYERS</h6>
+                        </div>
+                        <div class="agent-info">
+                            <p>
+                                LAST LOGIN: <span class="bold-agent-text">ONLINE NOW</span><br>
+                                TICKETS: <span class="bold-agent-text">12</span><br>
+                                RESPONSE TIME: <span class="bold-agent-text">2 HOURS</span>
+                            </p>
+                            <button type="button" class="agent-btn online-btn">Send Message</button>
+                        </div>
+                    </div>
+
+                    <div class="s-agent-wrapper">
+                        <div class="agent-block">
+                            <img src="/images/avatar2.jpg" width="60px" height="60px">
+                            <h6>AARON JUNT</h6>
+                        </div>
+                        <div class="agent-info">
+                            <p>
+                                LAST LOGIN: <span class="bold-agent-text">OFFLINE</span><br>
+                                TICKETS: <span class="bold-agent-text">9</span><br>
+                                RESPONSE TIME: <span class="bold-agent-text">3 HOURS</span>
+                            </p>
+                            <button type="button" class="agent-btn offline-btn">Send Message</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="right-block right-heading">
+                    <h3>RECENT ACTIVITY</h3>
+                </div>
+
+                <div class="activity-timeline">
+                    <div class="timeline-wrapper">
+                        <div class="timeline-time">
+                            <h6>10 MIN</h6>
+                            <div class="timeline-circle"> </div>
+                        </div>
+                        <div class="timeline-img">
+                            <img src="/images/avatar1.jpg" height="50" width="50">
+                            <div class="timeline-user">
+                                <h6 class="activity-user">JOHN MAYERS</h6>
+                                <h6>OPENED NEW ACCOUNT</h6>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <div class="timeline-wrapper">
+                        <div class="timeline-time">
+                            <h6>10 MIN</h6>
+                            <div class="timeline-circle"> </div>
+                        </div>
+                        <div class="timeline-img">
+                            <img src="/images/avatar1.jpg" height="50" width="50">
+                            <div class="timeline-user">
+                                <h6 class="activity-user">JOHN MAYERS</h6>
+                                <h6>OPENED NEW ACCOUNT</h6>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <div class="timeline-wrapper">
+                        <div class="timeline-time">
+                            <h6>10 MIN</h6>
+                            <div class="timeline-circle"> </div>
+                        </div>
+                        <div class="timeline-img">
+                            <img src="/images/avatar1.jpg" height="50" width="50">
+                            <div class="timeline-user">
+                                <h6 class="activity-user">JOHN MAYERS</h6>
+                                <h6>OPENED NEW ACCOUNT</h6>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <div class="timeline-wrapper">
+                        <div class="timeline-time">
+                            <h6>10 MIN</h6>
+                            <div class="timeline-circle"> </div>
+                        </div>
+                        <div class="timeline-img">
+                            <img src="/images/avatar1.jpg" height="50" width="50">
+                            <div class="timeline-user">
+                                <h6 class="activity-user">JOHN MAYERS</h6>
+                                <h6>OPENED NEW ACCOUNT</h6>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div class="right-block right-heading">
+                    <h3>Team Members</h3>
+                </div>
+
+                <div class="team-members-wrapper">
+                    <input type="input" placeholder="Search team members...." id="team-members-search">
+                    <div class="team-members-container">
+                        <div class="team-members-block">
+                            <img src="/images/avatar1.jpg" height="60" width="60" class="team-member-img">
+                            <div class="team-member-info">
+                                <h4>John Mayers</h4>
+                                <h6>ACCOUNT MANAGER</h6>
+                            </div>
+                            <svg class="team-member-mail-svg" height="30" width="30" class="w-6 h-6" fill="none" stroke="var(--blue)" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                        </div>
+
+                        <div class="team-members-block">
+                            <img src="/images/avatar2.jpg" height="60" width="60" class="team-member-img">
+                            <div class="team-member-info">
+                                <h4>Aaron Junt</h4>
+                                <h6>ACCOUNT MANAGER</h6>
+                            </div>
+                            <svg class="team-member-mail-svg" height="30" width="30" class="w-6 h-6" fill="none" stroke="var(--blue)" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                        </div>
+
+                        <div class="team-members-block">
+                            <img src="/images/avatar3.jpg" height="60" width="60" class="team-member-img">
+                            <div class="team-member-info">
+                                <h4>David Black</h4>
+                                <h6>ACCOUNT MANAGER</h6>
+                            </div>
+                            <svg class="team-member-mail-svg" height="30" width="30" class="w-6 h-6" fill="none" stroke="var(--blue)" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                        </div>
+
+                        <div class="team-members-block">
+                            <img src="/images/avatar4.jpg" height="60" width="60" class="team-member-img">
+                            <div class="team-member-info">
+                                <h4>Susan Summers</h4>
+                                <h6>ACCOUNT MANAGER</h6>
+                            </div>
+                            <svg class="team-member-mail-svg" height="30" width="30" class="w-6 h-6" fill="none" stroke="var(--blue)" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <script src="/main.js" type="text/javascript"></script>
+</body>
+</html>
